@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Hover Enlarge</title>
+<style>
+    .image-container {
+        position: relative;
+        width: 300px; /* adjust width as needed */
+        height: 200px; /* adjust height as needed */
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.1); /* adjust scale factor for enlargement */
+    }
+</style>
+</head>
+<body>
+    <h1>Hover To Enlarge the Image</h1>
+
+<div class="image-container">
+    <img src="socs.jpg" alt="Your Image">
+</div>
+
+</body>
+</html>

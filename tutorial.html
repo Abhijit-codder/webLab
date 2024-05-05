@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--Create html form for selecting sports in your university the form should have fields like
+     name, password, address,select game, gender , age-->
+<html>
+    <head>
+        <title>Sports Registration</title>
+        <style>
+body{  
+  font-family: Calibri, Helvetica, sans-serif;   
+  border:#0e0f0e;
+  background-color: rgb(209, 157, 36);
+}  
+.box {  
+    padding-right: 50px;  
+    background-color: beige; 
+    padding: 20px;
+    align-items: center;
+}  
+input[type=text], input[type=password]{  
+  width: 100%;  
+  padding: auto;  
+  margin: auto; 
+  border: none; 
+  display: inline-block;  
+  background: #f1f1f1;  
+} 
+div {  
+            padding: 10px 0;
+            border-radius: 12px; 
+            box-shadow: 0px 0px 100px #030303;
+            color: rgb(0, 0, 0);
+            justify-content: center;
+            margin-right: 25%;
+            margin-left: 25%;
+            margin-top: 50px;
+         } 
+         
+         .reg{  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+h2{
+    text-align: center;
+}
+     </style>
+    </head>
+    <body>
+        <div class="box">
+        <h2>Sports Registration</h2>
+        <form>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter full name" >
+            <br><br>
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" >
+            <br><br>
+            <label>Address:</label>
+            <input type="text" placeholder="Enter password" >
+            <br><br>
+            <label> Select sport:</label>
+            
+            <select id="123">
+                <option value="">Football</option>
+                <option value="">Badminton</option>
+                <option value="">Volleyball</option>
+                <option value="">Hockey</option>
+                <option value="">Life</option>
+            </select>
+            <br><br>
+            <label>Gender:</label>
+            <input type="radio"> Male <input type="radio"> Female <input type="radio"> Others <br>
+            <label>Age:</label> <input type="text" popular="Enter age"><br>
+        </form>
+        <button type="submit" class="reg">Register</button>  
+    </div>
+    </body>
+
+</html>
